@@ -94,6 +94,9 @@ button {
 }
 
 .cards {
+    /* display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -104,7 +107,8 @@ button {
 
 .card {
     padding: 35px 40px 25px;
-    margin: 0px 50px;
+    background: #FFFFFF;
+    /* margin: 0px 50px; */
     border: 1px solid #D9E4E6;
     border-radius: 5px;
 }
@@ -117,8 +121,8 @@ button {
     background-color:#eaeff9;
     border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    /* flex-direction: column; */
+    align-items: center;
     justify-content: center;
 }
 
@@ -142,11 +146,12 @@ button {
 .features__border {
     margin: 50px 0;
     border: 1px solid #e6eaf4;
+    width: 100%;
 }
 
 .features__feedback{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .features__feedback-left {
@@ -165,7 +170,8 @@ button {
 
 .features__feedback-right {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    align-items: center;
 }
 
 .features__box {
@@ -200,15 +206,15 @@ button {
 
 .promo {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .promo__image {
     background-image: url('img/promo.jpg');
     background-size:cover;
-    text-align: center;
     width: 50%;
     flex-shrink: 0;
+    background-position: center;
 }
 
 .promo__right {
@@ -238,9 +244,13 @@ button {
     vertical-align: middle;
     background-color: #ec6b29;
     margin-right: 10px;
-    border-radius: 10px;
+    border-radius:50%;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+}
 
 .btn button {
     background-color: #107b1c;
@@ -248,9 +258,9 @@ button {
     font-size: 18px;
     padding: 15px 30px;
     font-weight: 600;
-    display: flex;
-    align-items:center;
+    box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
 }
+
 
 .fa-chevron-right {
     font-size: 15px;
@@ -457,11 +467,13 @@ header a {
     text-align: center;
     height: 500px;
     flex-shrink: 0;
+    width: 100%;
 }
 
 .promo {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    flex-direction: column-reverse;
 }
 
 .promo__right {
