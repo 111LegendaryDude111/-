@@ -197,8 +197,14 @@ button {
     background-color: #1D263A;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0 6px 0  rgb(29 38 58 / 20%);
-    
 }
+
+.features__rate-box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
 
 .fa-star{
     color: #ff7039;
