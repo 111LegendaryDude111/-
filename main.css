@@ -10,11 +10,20 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky ;
+    position: fixed ;
+    left: 0;
+    right: 0;
     top:0;
-    background-color:#fff;
+    background-color:none;
     z-index: 1;
+    transition: box-shadow, background-color .25s ease;
+
 }
+
+  .header__scrolled {
+    background-color: white;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+  }
 
 .header__logo {
     height: 30px;;
@@ -66,12 +75,16 @@ button {
     align-items:center;
     justify-content: space-around;
     padding-bottom: 115px;
-    padding-top: 115px;
+    padding-top: 200px;
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
   }
+
+/* .about{
+    padding-top: 200px;
+} */
 
 .about h1 {
     font-size: 70px;
